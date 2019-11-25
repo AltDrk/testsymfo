@@ -1,3 +1,15 @@
+home:
+  path: /
+  controller: App\Controller\Application\HomeController::index
+
+
+menu:
+  path: /menu/{name}/{foo}
+  controller: App\Controller\Application\MenuController::index
+  methods: GET
+  requirements:
+    name: 'test'
+
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index

@@ -6,6 +6,10 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+        <nav>
+            <a href="{{ path('home') }}">Acceuil</a>
+            <a href="{{ path('menu', {'name':'test', 'foo':'name'}) }}">Menu</a>
+        </nav>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
